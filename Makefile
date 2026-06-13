@@ -1,5 +1,5 @@
 FLAGS = *.c
 
 make : 
-	gcc -Wall -Wextra -g -o a.out ${FLAGS} `sdl2-config --cflags --libs` -lm 
+	gcc -Wall -Wextra -g -o a.out ${FLAGS} -lraylib -lm 
 	./a.out
